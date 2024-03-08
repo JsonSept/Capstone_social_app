@@ -26,7 +26,7 @@ app.get('/users/:id', (req, res) => {
     res.json(users);
   });
 
-  app.use('/users',usersRouter)
+  // app.use('/users',usersRouter)
 
 const authenticate = (req,res,next) =>{
     let {cookie} = req.headers
